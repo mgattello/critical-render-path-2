@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Critical Render Path 2</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 50px;
+            transform: translateX(-50);
+            transform: translateY(-50);
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey, welcome back!</h1>
+    <img src="img/a.jpg" width="500px" height="auto" />
+    <button>Click me!</button>
+
+    <!-- Render blocking and Parser blocking
+    <script>
+        let button = document.querySelector("button");
+        button.style.color = "red";
+    </script>
+    -->
+    <script src="script.js"></script>
+    <script async src="./script2.js"></script>
+    <script src="./script3.js"></script>
+    <script>
+        const button = document.querySelector("button");
+        button.addEventListener("click", ()=>{
+            alert("Don't click me again!");
+        })
+    </script>
+</body>
+</html>
