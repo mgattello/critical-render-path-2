@@ -2,7 +2,7 @@
 
 In the Critical Render Path 1 (https://github.com/mgattello/critical-render-path), we saw what it is, how to optimize the first two phases. In this chapter, we'll see how to optimize the script.
 
-![[critical_render_path](/img/d.png)
+![crp](/img/d.png)
 
 ## Optimize script (C)
 
